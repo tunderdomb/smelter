@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Front-end forgery.",
   "main": "smelter.js",
+  "preferGlobal": "true",
   "bin": {
-    "smelter": "smelter.js"
+    "smelter": "bin/smelter.js"
   },
   "directories": {
     "test": "test"
