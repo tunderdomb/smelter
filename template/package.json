@@ -1,0 +1,33 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-stylus": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-autoprefixer": "latest",
+    "grunt-modernizr": "latest",
+    "grunt-newer": "latest",
+    "grunt-nodemailer": "latest",
+    "load-grunt-tasks": "latest",
+    "grunt-rebase": "latest",
+    "grunt-bracer": "latest",
+    "grunt-stylist": "latest",
+    "grunt-contrib-less": "latest"
+  }
+}

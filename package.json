@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/tunderdomb/smelter/issues"
   },
-  "homepage": "https://github.com/tunderdomb/smelter"
+  "homepage": "https://github.com/tunderdomb/smelter",
+  "devDependencies": {
+    "minimist": "0.0.8"
+  }
 }
