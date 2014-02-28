@@ -50,6 +50,7 @@ function scaffold(  ){
     "res/style",
     "res/sprites",
     "res/import",
+    "res/modules",
     "src/",
     "src/media",
     "src/media/audio",

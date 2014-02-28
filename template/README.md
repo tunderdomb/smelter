@@ -22,6 +22,66 @@ Hello
 
 #### sprites `/res/sprites`
 
+#### modules `/res/modules`
+
+Javascript modules structured into directories, or standalone files.
+Every directory will behave as a concatenation list.
+Files will be merged in the order they appear.
+The merged file will be named after their parent directory.
+The default output folder is the script root (`/src/script`).
+To define concatenation order, or change the output dir,
+make an entry with the module's name in the `modules.json`.
+You can also set an execution context for the merged script.
+In this case, a wrapper function will be placed around all the scripts,
+and it will be called with the variable you provided in the `modules.json`
+
+    res/
+      modules/
+        modules.json
+        example/
+          end.js
+          header.js
+          script1.js
+          script2.js
+        example2/
+          script1.js
+          script2.js
+        example3/
+          script1.js
+          script2.js
+
+In modules.json:
+
+    {
+      // concat script in this order
+      "example": [
+        "header", "script1", "script2", "end"
+      ],
+      // change the target dir, and exclude some scripts
+      "example2": {
+        "target": "some/other/dir/",
+        "concat":[
+          "script1"
+        ]
+      },
+      // set an execution context for scripts
+      "example2": {
+        "context": "myNamespace"
+      }
+    }
+
+If a context is provided, the merged script will look something like this:
+
+```js
+
+!function(){
+
+  /* contents of concatenated scripts in order they are defined */
+
+}.call(myNamespace);
+
+```
+
 
 ### www root `/src`
 
