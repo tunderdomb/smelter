@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/tunderdomb/smelter",
   "devDependencies": {
-    "minimist": "0.0.8"
+    "minimist": "0.0.8",
+    "async": "~0.2.10",
+    "mkdirp": "~0.3.5"
   }
 }
