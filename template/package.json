@@ -16,7 +16,7 @@
     "grunt": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-contrib-clean": "latest",
+    "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-stylus": "latest",
     "grunt-contrib-connect": "latest",
     "grunt-contrib-imagemin": "latest",
@@ -28,6 +28,7 @@
     "grunt-rebase": "latest",
     "grunt-bracer": "latest",
     "grunt-stylist": "latest",
-    "grunt-contrib-less": "latest"
+    "grunt-contrib-less": "latest",
+    "grunt-grunticon": "latest"
   }
 }
